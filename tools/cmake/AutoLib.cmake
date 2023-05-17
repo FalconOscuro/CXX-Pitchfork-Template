@@ -197,10 +197,10 @@ function(_auto_lib)
         add_subdirectory("${examples_dir}")
     endif()
 
-    # Extras
-    get_filename_component(extras_dir "${PROJECT_SOURCE_DIR}/extras" ABSOLUTE)
-    if(EXISTS "${extras_dir}/CMakeLists.txt" AND NOT extras_dir IN_LIST already_subdirs)
-        add_subdirectory("${extras_dir}")
+    # Tools
+    get_filename_component(tools_dir "${PROJECT_SOURCE_DIR}/tools" ABSOLUTE)
+    if(EXISTS "${tools_dir}/CMakeLists.txt" AND NOT tools_dir IN_LIST already_subdirs)
+        add_subdirectory("${tools_dir}")
     endif()
 
     # Data
