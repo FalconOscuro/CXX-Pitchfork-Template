@@ -24,3 +24,5 @@ if (NOT MSVC)
 endif()
 
 include(AutoLib)
+
+auto_lib()
